@@ -1,0 +1,6 @@
+{
+  "name": "SupportIQ",
+  "description": "AI-Powered Customer Support and Knowledge Management Operations Platform",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

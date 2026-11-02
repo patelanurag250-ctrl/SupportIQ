@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #F5F3EE;
+    --surface-dark: #202522;
+    --sidebar-bg: #171C19;
+    --accent-lime: #C7F36B;
+    --accent-sage: #879B87;
+    --text-primary: #252A26;
+    --text-secondary: #777D75;
+    --border-color: #E4E2DA;
+    --status-success: #79A88A;
+    --status-warning: #E9A23B;
+    --status-critical: #E66B5B;
+  }
+
+  body {
+    background-color: #F5F3EE;
+    color: #252A26;
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    font-family: 'Manrope', sans-serif;
+    letter-spacing: -0.02em;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom scrollbars for operational panels */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #D5D2C8;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #879B87;
+}
+
+/* Dark surface scrollbar */
+.dark-scroll::-webkit-scrollbar-thumb {
+  background: #2C3530;
+}
+.dark-scroll::-webkit-scrollbar-thumb:hover {
+  background: #3E4B44;
+}

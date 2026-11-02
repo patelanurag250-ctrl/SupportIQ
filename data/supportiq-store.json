@@ -1,0 +1,916 @@
+{
+  "organizations": [
+    {
+      "id": "org-apex-01",
+      "name": "Apex Global Technologies",
+      "domain": "apexglobal.com",
+      "plan": "Enterprise Operations Tier",
+      "createdAt": "2026-08-03T10:12:58.537Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "usr-admin-01",
+      "organizationId": "org-apex-01",
+      "email": "admin@supportiq.com",
+      "displayName": "Alex Mercer (Head of Ops)",
+      "role": "ADMIN",
+      "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+      "department": "Operations & Engineering",
+      "assignedCount": 4,
+      "resolvedCount": 38,
+      "csatAvg": 4.9,
+      "createdAt": "2026-08-13T10:12:58.538Z"
+    },
+    {
+      "id": "usr-admin-runtime",
+      "organizationId": "org-apex-01",
+      "email": "patelanurag250@gmail.com",
+      "displayName": "Anurag Patel (Root Admin)",
+      "role": "ADMIN",
+      "avatarUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
+      "department": "Platform Administration",
+      "assignedCount": 5,
+      "resolvedCount": 42,
+      "csatAvg": 5,
+      "createdAt": "2026-08-23T10:12:58.538Z"
+    },
+    {
+      "id": "usr-agent-01",
+      "organizationId": "org-apex-01",
+      "email": "sarah.agent@supportiq.com",
+      "displayName": "Sarah Jenkins",
+      "role": "SUPPORT_AGENT",
+      "avatarUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80",
+      "department": "Tier 2 Technical Support",
+      "assignedCount": 7,
+      "resolvedCount": 89,
+      "csatAvg": 4.8,
+      "createdAt": "2026-09-02T10:12:58.538Z"
+    },
+    {
+      "id": "usr-agent-02",
+      "organizationId": "org-apex-01",
+      "email": "marcus.agent@supportiq.com",
+      "displayName": "Marcus Vance",
+      "role": "SUPPORT_AGENT",
+      "avatarUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
+      "department": "Billing & Account Services",
+      "assignedCount": 5,
+      "resolvedCount": 64,
+      "csatAvg": 4.7,
+      "createdAt": "2026-09-12T10:12:58.538Z"
+    },
+    {
+      "id": "usr-cust-01",
+      "organizationId": "org-apex-01",
+      "email": "elena.rodriguez@clientcorp.io",
+      "displayName": "Elena Rodriguez",
+      "role": "CUSTOMER",
+      "avatarUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80",
+      "department": "ClientCorp Engineering",
+      "createdAt": "2026-09-22T10:12:58.538Z"
+    },
+    {
+      "id": "usr-cust-02",
+      "organizationId": "org-apex-01",
+      "email": "alex.chen@startupflow.dev",
+      "displayName": "Alex Chen",
+      "role": "CUSTOMER",
+      "avatarUrl": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&auto=format&fit=crop&q=80",
+      "department": "StartupFlow Tech",
+      "createdAt": "2026-10-02T10:12:58.538Z"
+    },
+    {
+      "id": "usr-cust-03",
+      "organizationId": "org-apex-01",
+      "email": "david.kim@innovate.co",
+      "displayName": "David Kim",
+      "role": "CUSTOMER",
+      "avatarUrl": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&auto=format&fit=crop&q=80",
+      "department": "Innovate Logistics",
+      "createdAt": "2026-10-07T10:12:58.538Z"
+    }
+  ],
+  "documents": [
+    {
+      "id": "doc-sec-01",
+      "organizationId": "org-apex-01",
+      "title": "Enterprise Cloud Security & Access Policy 2026",
+      "fileName": "security-access-policy-v2.6.pdf",
+      "fileType": "pdf",
+      "fileSize": 428000,
+      "status": "Completed",
+      "chunkCount": 6,
+      "uploadedBy": "Alex Mercer",
+      "summary": "Mandatory enterprise authentication guidelines, SAML 2.0 / Okta / Azure AD configuration, IP restriction allowlists, and role-based permissions matrix.",
+      "createdAt": "2026-10-12T10:12:58.538Z",
+      "updatedAt": "2026-10-30T10:12:58.538Z"
+    },
+    {
+      "id": "doc-bill-02",
+      "organizationId": "org-apex-01",
+      "title": "Billing, Invoicing & Refund Protocols v4.2",
+      "fileName": "billing-refund-sop-v4.docx",
+      "fileType": "docx",
+      "fileSize": 215000,
+      "status": "Completed",
+      "chunkCount": 5,
+      "uploadedBy": "Marcus Vance",
+      "summary": "Complete rules regarding 30-day prorated refunds, annual contract discounts, automated VAT calculation, chargeback handling, and payment gateway retry windows.",
+      "createdAt": "2026-10-14T10:12:58.538Z",
+      "updatedAt": "2026-10-31T10:12:58.538Z"
+    },
+    {
+      "id": "doc-api-03",
+      "organizationId": "org-apex-01",
+      "title": "API Rate Limiting, Quotas & Webhook Specifications",
+      "fileName": "api-architecture-limits.md",
+      "fileType": "md",
+      "fileSize": 98000,
+      "status": "Completed",
+      "chunkCount": 5,
+      "uploadedBy": "Alex Mercer",
+      "summary": "Technical specifications for REST endpoints, token bucket rate limits (1,000 req/min for Enterprise), HMAC-SHA256 signature verification, and webhook idempotency keys.",
+      "createdAt": "2026-10-17T10:12:58.538Z",
+      "updatedAt": "2026-10-29T10:12:58.538Z"
+    },
+    {
+      "id": "doc-sso-04",
+      "organizationId": "org-apex-01",
+      "title": "Single Sign-On (SSO) & IdP Integration Runbook",
+      "fileName": "sso-idp-integration-guide.txt",
+      "fileType": "txt",
+      "fileSize": 64000,
+      "status": "Completed",
+      "chunkCount": 4,
+      "uploadedBy": "Sarah Jenkins",
+      "summary": "Step-by-step setup for Google Workspace SSO, Microsoft Entra ID, SCIM automated user provisioning, and emergency bypass break-glass credentials.",
+      "createdAt": "2026-10-22T10:12:58.538Z",
+      "updatedAt": "2026-10-22T10:12:58.538Z"
+    }
+  ],
+  "chunks": [
+    {
+      "id": "chk-sec-01",
+      "documentId": "doc-sec-01",
+      "organizationId": "org-apex-01",
+      "title": "Enterprise Cloud Security & Access Policy 2026",
+      "section": "Section 2.1: Authentication Protocols & MFA Enforcement",
+      "pageNumber": 3,
+      "content": "All Enterprise accounts must enforce Multi-Factor Authentication (MFA) via TOTP, WebAuthn FIDO2 keys, or verified SAML SSO. SMS-based 2FA is deprecated and disallowed for administrative accounts. In case of 5 consecutive failed login attempts, the target user identity is locked for 15 minutes unless unlocked via administrator authorization."
+    },
+    {
+      "id": "chk-sec-02",
+      "documentId": "doc-sec-01",
+      "organizationId": "org-apex-01",
+      "title": "Enterprise Cloud Security & Access Policy 2026",
+      "section": "Section 4.3: IP Address Filtering & CIDR Allowlists",
+      "pageNumber": 7,
+      "content": "Organizations may restrict console and API access to designated IPv4/IPv6 CIDR ranges. In the event an authorized engineer is locked out due to network IP changes, break-glass recovery tokens must be used alongside secondary approval from an Organization Owner."
+    },
+    {
+      "id": "chk-sec-03",
+      "documentId": "doc-sec-01",
+      "organizationId": "org-apex-01",
+      "title": "Enterprise Cloud Security & Access Policy 2026",
+      "section": "Section 5.0: Role-Based Access Control (RBAC) Hierarchy",
+      "pageNumber": 9,
+      "content": "The platform defines three core roles: ADMIN (full permissions, user management, billing, knowledge library mutation), SUPPORT_AGENT (ticket queue management, conversation handling, knowledge retrieval), and CUSTOMER (ticket submission, chat assistance, personal history access)."
+    },
+    {
+      "id": "chk-bill-01",
+      "documentId": "doc-bill-02",
+      "organizationId": "org-apex-01",
+      "title": "Billing, Invoicing & Refund Protocols v4.2",
+      "section": "Section 1.2: 30-Day Money-Back Guarantee & Refund Terms",
+      "pageNumber": 2,
+      "content": "Customers are eligible for a 100% full refund within 30 days of initial subscription purchase without question. Beyond 30 days, prorated refunds are only granted in the event of documented service downtime exceeding SLA thresholds (99.9% uptime requirement). To initiate a refund, customers must submit a ticket under the \"Refunds\" category."
+    },
+    {
+      "id": "chk-bill-02",
+      "documentId": "doc-bill-02",
+      "organizationId": "org-apex-01",
+      "title": "Billing, Invoicing & Refund Protocols v4.2",
+      "section": "Section 3.4: Payment Failures & Grace Periods",
+      "pageNumber": 5,
+      "content": "When an automated credit card charge fails, the billing engine attempts retry attempts on Day 1, Day 3, and Day 7. The customer enters a 14-day grace period during which full platform services remain accessible. If payment is not settled by Day 14, account capabilities transition to Read-Only mode."
+    },
+    {
+      "id": "chk-bill-03",
+      "documentId": "doc-bill-02",
+      "organizationId": "org-apex-01",
+      "title": "Billing, Invoicing & Refund Protocols v4.2",
+      "section": "Section 4.1: Annual Invoicing and Net-30 Terms",
+      "pageNumber": 6,
+      "content": "Enterprise subscriptions totaling over $10,000 annually may opt for manual purchase order invoicing under Net-30 payment terms. Wire transfer and ACH details are provided on every official invoice PDF."
+    },
+    {
+      "id": "chk-api-01",
+      "documentId": "doc-api-03",
+      "organizationId": "org-apex-01",
+      "title": "API Rate Limiting, Quotas & Webhook Specifications",
+      "section": "Section 1.1: Standard Rate Limits & Headers",
+      "pageNumber": 1,
+      "content": "The API enforces a token-bucket rate limiter. Enterprise tier keys receive 1,000 requests per minute with bursts up to 1,500. Growth tier keys are limited to 300 requests per minute. Standard responses include X-RateLimit-Limit, X-RateLimit-Remaining, and X-RateLimit-Reset timestamps."
+    },
+    {
+      "id": "chk-api-02",
+      "documentId": "doc-api-03",
+      "organizationId": "org-apex-01",
+      "title": "API Rate Limiting, Quotas & Webhook Specifications",
+      "section": "Section 2.5: Webhook Signature Verification & Idempotency",
+      "pageNumber": 4,
+      "content": "All outgoing webhooks are signed using HMAC-SHA256 with the shared webhook secret passed in the X-SupportIQ-Signature header. Receivers must verify this signature and record the X-Delivery-ID to ensure idempotent processing in case of automatic retries (exponential backoff up to 5 times over 24 hours)."
+    },
+    {
+      "id": "chk-sso-01",
+      "documentId": "doc-sso-04",
+      "organizationId": "org-apex-01",
+      "title": "Single Sign-On (SSO) & IdP Integration Runbook",
+      "section": "Section 1.0: SAML 2.0 Configuration Parameters",
+      "pageNumber": 1,
+      "content": "To configure SAML 2.0 SSO in your Identity Provider (Okta, Azure AD, OneLogin, Google Workspace), input the Assertion Consumer Service (ACS) URL: https://app.supportiq.io/api/auth/saml/callback and Entity ID: urn:supportiq:saml:sp. Provide the X.509 Certificate and IdP Single Sign-On URL in Settings > Security."
+    },
+    {
+      "id": "chk-sso-02",
+      "documentId": "doc-sso-04",
+      "organizationId": "org-apex-01",
+      "title": "Single Sign-On (SSO) & IdP Integration Runbook",
+      "section": "Section 2.2: Automated SCIM User Provisioning",
+      "pageNumber": 3,
+      "content": "SupportIQ supports SCIM 2.0 protocol for automated user provisioning and deprovisioning. When an employee is deactivated in Okta or Azure AD, their SupportIQ account is automatically suspended within 60 seconds, reallocating active support tickets to the team pool."
+    }
+  ],
+  "tickets": [
+    {
+      "id": "TCK-8901",
+      "organizationId": "org-apex-01",
+      "customerId": "usr-cust-01",
+      "customerName": "Elena Rodriguez",
+      "customerEmail": "elena.rodriguez@clientcorp.io",
+      "subject": "Critical: Production SAML SSO callback failing with StatusCode 403",
+      "description": "Our entire team of 140 engineers is unable to log in this morning after our IdP rotated SAML X.509 certificates. We keep getting an ACS 403 Invalid Signature error. Need immediate emergency assistance.",
+      "category": "Account Access",
+      "priority": "Critical",
+      "status": "Open",
+      "assignedAgentId": "usr-agent-01",
+      "assignedAgentName": "Sarah Jenkins",
+      "sentiment": "Negative",
+      "sentimentScore": -0.92,
+      "createdAt": "2026-11-01T09:47:58.538Z",
+      "updatedAt": "2026-11-01T10:02:58.538Z",
+      "analysis": {
+        "category": "Account Access",
+        "sentiment": "Negative",
+        "sentimentScore": -0.92,
+        "urgency": "Critical",
+        "summary": "Customer enterprise is experiencing total outage for 140 engineers due to SAML SSO certificate rotation mismatch at the ACS endpoint.",
+        "suggestedResponse": "Hi Elena, I understand this is critical. When your IdP rotated certificates, SupportIQ still had the previous public X.509 cert cached. I have generated a temporary emergency bypass token for your admin account. Please navigate to Settings > Security > SAML and paste the updated IdP X.509 Certificate string, or verify if the ACS URL is pointing to urn:supportiq:saml:sp.",
+        "confidenceScore": 0.98,
+        "relevantKnowledgeSnippets": [
+          {
+            "documentTitle": "Single Sign-On (SSO) & IdP Integration Runbook",
+            "section": "Section 1.0: SAML 2.0 Configuration Parameters",
+            "page": 1,
+            "snippet": "Provide the X.509 Certificate and IdP Single Sign-On URL in Settings > Security.",
+            "relevance": 0.95
+          }
+        ]
+      },
+      "comments": [
+        {
+          "id": "cmt-1",
+          "ticketId": "TCK-8901",
+          "organizationId": "org-apex-01",
+          "authorId": "usr-cust-01",
+          "authorName": "Elena Rodriguez",
+          "authorRole": "CUSTOMER",
+          "content": "Escalating this as our morning sprint planning is blocked. Please respond urgently.",
+          "isInternal": false,
+          "createdAt": "2026-11-01T09:52:58.538Z"
+        }
+      ]
+    },
+    {
+      "id": "TCK-8902",
+      "organizationId": "org-apex-01",
+      "customerId": "usr-cust-02",
+      "customerName": "Alex Chen",
+      "customerEmail": "alex.chen@startupflow.dev",
+      "subject": "API rate limiter throwing 429 Too Many Requests on bulk sync endpoint",
+      "description": "We are running a migration pipeline syncing 40,000 customer records and getting hit with HTTP 429 headers every 30 seconds. We are on the Enterprise plan and thought our quota was 1,000 req/min.",
+      "category": "Technical Support",
+      "priority": "High",
+      "status": "In Progress",
+      "assignedAgentId": "usr-agent-01",
+      "assignedAgentName": "Sarah Jenkins",
+      "sentiment": "Negative",
+      "sentimentScore": -0.65,
+      "createdAt": "2026-11-01T07:52:58.538Z",
+      "updatedAt": "2026-11-01T09:42:58.538Z",
+      "analysis": {
+        "category": "Technical Support",
+        "sentiment": "Negative",
+        "sentimentScore": -0.65,
+        "urgency": "High",
+        "summary": "Customer migration script is bursting beyond token bucket capacity (1,000 req/min limit with 1,500 burst capacity), receiving HTTP 429 errors.",
+        "suggestedResponse": "Hi Alex, Enterprise tier keys have a token-bucket rate limit of 1,000 requests per minute with burst capacity of 1,500. For large migrations, we recommend implementing exponential backoff using the X-RateLimit-Reset response header or utilizing our bulk upload batch endpoint.",
+        "confidenceScore": 0.94,
+        "relevantKnowledgeSnippets": [
+          {
+            "documentTitle": "API Rate Limiting, Quotas & Webhook Specifications",
+            "section": "Section 1.1: Standard Rate Limits & Headers",
+            "page": 1,
+            "snippet": "The API enforces a token-bucket rate limiter. Enterprise tier keys receive 1,000 requests per minute with bursts up to 1,500.",
+            "relevance": 0.98
+          }
+        ]
+      }
+    },
+    {
+      "id": "TCK-8903",
+      "organizationId": "org-apex-01",
+      "customerId": "usr-cust-03",
+      "customerName": "David Kim",
+      "customerEmail": "david.kim@innovate.co",
+      "subject": "Request for prorated refund after migrating down to Growth plan",
+      "description": "We downgraded our plan on Day 14 of our billing cycle. We were billed for the full annual Enterprise seat count and would like to request a prorated credit back to our corporate card.",
+      "category": "Refunds",
+      "priority": "Medium",
+      "status": "In Progress",
+      "assignedAgentId": "usr-agent-02",
+      "assignedAgentName": "Marcus Vance",
+      "sentiment": "Neutral",
+      "sentimentScore": 0.05,
+      "createdAt": "2026-11-01T04:12:58.538Z",
+      "updatedAt": "2026-11-01T08:52:58.538Z",
+      "analysis": {
+        "category": "Refunds",
+        "sentiment": "Neutral",
+        "sentimentScore": 0.05,
+        "urgency": "Medium",
+        "summary": "Customer downgraded plan within 30 days and requests prorated refund calculation under the 30-day money-back policy.",
+        "suggestedResponse": "Hi David, thanks for reaching out. Under our 30-Day Money-Back Guarantee policy, plan changes within the first 30 days are fully eligible for prorated refunds. I have initiated the credit calculation of $1,420 back to your original payment card.",
+        "confidenceScore": 0.96,
+        "relevantKnowledgeSnippets": [
+          {
+            "documentTitle": "Billing, Invoicing & Refund Protocols v4.2",
+            "section": "Section 1.2: 30-Day Money-Back Guarantee & Refund Terms",
+            "page": 2,
+            "snippet": "Customers are eligible for a 100% full refund within 30 days of initial subscription purchase without question.",
+            "relevance": 0.96
+          }
+        ]
+      }
+    },
+    {
+      "id": "TCK-8904",
+      "organizationId": "org-apex-01",
+      "customerId": "usr-cust-01",
+      "customerName": "Elena Rodriguez",
+      "customerEmail": "elena.rodriguez@clientcorp.io",
+      "subject": "How do we configure IP allowlists for our webhook endpoints?",
+      "description": "Our security team requires us to allowlist the source IP addresses of all outgoing webhooks from SupportIQ. Could you please share the current NAT gateway IP ranges?",
+      "category": "Technical Support",
+      "priority": "Low",
+      "status": "Open",
+      "assignedAgentId": "usr-agent-01",
+      "assignedAgentName": "Sarah Jenkins",
+      "sentiment": "Neutral",
+      "sentimentScore": 0.2,
+      "createdAt": "2026-11-01T01:32:58.538Z",
+      "updatedAt": "2026-11-01T01:32:58.538Z"
+    },
+    {
+      "id": "TCK-8905",
+      "organizationId": "org-apex-01",
+      "customerId": "usr-cust-02",
+      "customerName": "Alex Chen",
+      "customerEmail": "alex.chen@startupflow.dev",
+      "subject": "Payment card update failed with 3D Secure verification error",
+      "description": "Our finance department tried updating our backup Visa corporate card, but the verification modal timed out. We are worried about our account locking down.",
+      "category": "Billing",
+      "priority": "High",
+      "status": "Waiting for Customer",
+      "assignedAgentId": "usr-agent-02",
+      "assignedAgentName": "Marcus Vance",
+      "sentiment": "Negative",
+      "sentimentScore": -0.45,
+      "createdAt": "2026-10-31T19:12:58.538Z",
+      "updatedAt": "2026-11-01T08:12:58.538Z"
+    },
+    {
+      "id": "TCK-8906",
+      "organizationId": "org-apex-01",
+      "customerId": "usr-cust-03",
+      "customerName": "David Kim",
+      "customerEmail": "david.kim@innovate.co",
+      "subject": "SCIM automated user deprovisioning delay in Azure AD",
+      "description": "When we revoke employee accounts in Azure AD, their tickets remained assigned for several hours instead of immediate reallocation. Need to confirm SCIM sync frequency.",
+      "category": "Product Issues",
+      "priority": "Medium",
+      "status": "Resolved",
+      "assignedAgentId": "usr-agent-01",
+      "assignedAgentName": "Sarah Jenkins",
+      "resolutionTimeMinutes": 48,
+      "csatRating": 5,
+      "sentiment": "Positive",
+      "sentimentScore": 0.75,
+      "createdAt": "2026-10-31T04:12:58.538Z",
+      "updatedAt": "2026-11-01T06:52:58.538Z"
+    },
+    {
+      "id": "TCK-8907",
+      "organizationId": "org-apex-01",
+      "customerId": "usr-cust-01",
+      "customerName": "Elena Rodriguez",
+      "customerEmail": "elena.rodriguez@clientcorp.io",
+      "subject": "Invoice copy required for Q3 tax filing and EU VAT compliance",
+      "description": "Please generate a signed PDF invoice copy showing our reverse-charge EU VAT registration number for August billing.",
+      "category": "Billing",
+      "priority": "Low",
+      "status": "Resolved",
+      "assignedAgentId": "usr-agent-02",
+      "assignedAgentName": "Marcus Vance",
+      "resolutionTimeMinutes": 32,
+      "csatRating": 5,
+      "sentiment": "Positive",
+      "sentimentScore": 0.88,
+      "createdAt": "2026-10-30T18:12:58.538Z",
+      "updatedAt": "2026-11-01T04:22:58.538Z"
+    },
+    {
+      "id": "TCK-8908",
+      "organizationId": "org-apex-01",
+      "customerId": "usr-cust-02",
+      "customerName": "Alex Chen",
+      "customerEmail": "alex.chen@startupflow.dev",
+      "subject": "Webhook HMAC-SHA256 signature verification failing on node.js receiver",
+      "description": "We are computing crypto.createHmac(\"sha256\", secret).update(rawBody).digest(\"hex\") but our signature does not match X-SupportIQ-Signature. Is the payload UTF-8 encoded?",
+      "category": "Technical Support",
+      "priority": "Medium",
+      "status": "Resolved",
+      "assignedAgentId": "usr-agent-01",
+      "assignedAgentName": "Sarah Jenkins",
+      "resolutionTimeMinutes": 55,
+      "csatRating": 4,
+      "sentiment": "Neutral",
+      "sentimentScore": 0.1,
+      "createdAt": "2026-10-30T04:52:58.538Z",
+      "updatedAt": "2026-11-01T01:52:58.538Z"
+    },
+    {
+      "id": "TCK-8909",
+      "organizationId": "org-apex-01",
+      "customerId": "usr-cust-03",
+      "customerName": "David Kim",
+      "customerEmail": "david.kim@innovate.co",
+      "subject": "Inquiry regarding custom data retention policies for HIPAA compliance",
+      "description": "Does SupportIQ support custom automated purging schedules for customer support ticket attachments and transcripts after 90 days?",
+      "category": "General Inquiry",
+      "priority": "Low",
+      "status": "Closed",
+      "assignedAgentId": "usr-admin-01",
+      "assignedAgentName": "Alex Mercer (Head of Ops)",
+      "resolutionTimeMinutes": 28,
+      "csatRating": 5,
+      "sentiment": "Positive",
+      "sentimentScore": 0.6,
+      "createdAt": "2026-10-29T07:12:58.538Z",
+      "updatedAt": "2026-10-31T20:52:58.538Z"
+    },
+    {
+      "id": "TCK-8910",
+      "organizationId": "org-apex-01",
+      "customerId": "usr-cust-01",
+      "customerName": "Elena Rodriguez",
+      "customerEmail": "elena.rodriguez@clientcorp.io",
+      "subject": "Critical security audit: Requesting SOC2 Type II report and DPA",
+      "description": "Our annual vendor compliance review requires the latest SOC2 report and updated Data Processing Addendum signed by your security officer.",
+      "category": "Account Access",
+      "priority": "High",
+      "status": "Resolved",
+      "assignedAgentId": "usr-admin-01",
+      "assignedAgentName": "Alex Mercer (Head of Ops)",
+      "resolutionTimeMinutes": 42,
+      "csatRating": 5,
+      "sentiment": "Positive",
+      "sentimentScore": 0.72,
+      "createdAt": "2026-10-28T09:32:58.538Z",
+      "updatedAt": "2026-10-31T14:12:58.538Z"
+    },
+    {
+      "id": "TCK-8911",
+      "organizationId": "org-apex-01",
+      "customerId": "usr-cust-02",
+      "customerName": "Alex Chen",
+      "customerEmail": "alex.chen@startupflow.dev",
+      "subject": "Can we add custom ticket tags via the REST API?",
+      "description": "We want to categorize incoming issues automatically from our microservice logs. Where is the endpoint to patch ticket tags?",
+      "category": "General Inquiry",
+      "priority": "Low",
+      "status": "Open",
+      "assignedAgentId": "usr-agent-01",
+      "assignedAgentName": "Sarah Jenkins",
+      "sentiment": "Neutral",
+      "sentimentScore": 0.15,
+      "createdAt": "2026-10-28T02:52:58.538Z",
+      "updatedAt": "2026-10-28T02:52:58.538Z"
+    },
+    {
+      "id": "TCK-8912",
+      "organizationId": "org-apex-01",
+      "customerId": "usr-cust-03",
+      "customerName": "David Kim",
+      "customerEmail": "david.kim@innovate.co",
+      "subject": "Disputed charge on corporate Amex for inactive seat count",
+      "description": "We had 5 seats decommissioned in July that were billed again on the August cycle. Please reconcile our seat count and issue a credit note.",
+      "category": "Billing",
+      "priority": "High",
+      "status": "In Progress",
+      "assignedAgentId": "usr-agent-02",
+      "assignedAgentName": "Marcus Vance",
+      "sentiment": "Negative",
+      "sentimentScore": -0.7,
+      "createdAt": "2026-10-27T11:52:58.538Z",
+      "updatedAt": "2026-10-31T18:22:58.538Z"
+    },
+    {
+      "id": "TCK-8913",
+      "organizationId": "org-apex-01",
+      "customerId": "usr-cust-01",
+      "customerName": "Elena Rodriguez",
+      "customerEmail": "elena.rodriguez@clientcorp.io",
+      "subject": "Two-factor authentication reset for locked out engineering manager",
+      "description": "Manager lost their hardware security key while traveling and needs administrator identity verification to reset 2FA enrollment.",
+      "category": "Account Access",
+      "priority": "Critical",
+      "status": "In Progress",
+      "assignedAgentId": "usr-admin-runtime",
+      "assignedAgentName": "Anurag Patel (Root Admin)",
+      "sentiment": "Negative",
+      "sentimentScore": -0.8,
+      "createdAt": "2026-10-26T20:52:58.538Z",
+      "updatedAt": "2026-10-31T10:52:58.538Z"
+    },
+    {
+      "id": "TCK-8914",
+      "organizationId": "org-apex-01",
+      "customerId": "usr-cust-02",
+      "customerName": "Alex Chen",
+      "customerEmail": "alex.chen@startupflow.dev",
+      "subject": "Feature request: Custom webhook retry interval specification",
+      "description": "Would appreciate if we could configure a custom backoff curve for webhooks delivering to our staging sandbox.",
+      "category": "Product Issues",
+      "priority": "Low",
+      "status": "Closed",
+      "assignedAgentId": "usr-agent-01",
+      "assignedAgentName": "Sarah Jenkins",
+      "resolutionTimeMinutes": 75,
+      "csatRating": 4,
+      "sentiment": "Neutral",
+      "sentimentScore": 0.3,
+      "createdAt": "2026-10-25T19:52:58.538Z",
+      "updatedAt": "2026-10-30T21:32:58.538Z"
+    },
+    {
+      "id": "TCK-8915",
+      "organizationId": "org-apex-01",
+      "customerId": "usr-cust-03",
+      "customerName": "David Kim",
+      "customerEmail": "david.kim@innovate.co",
+      "subject": "Annual contract renewal quote with volume seat discount",
+      "description": "Our contract expires next month. We plan to expand from 60 to 120 seats. Please prepare the renewal quote with volume pricing.",
+      "category": "Billing",
+      "priority": "Medium",
+      "status": "Resolved",
+      "assignedAgentId": "usr-agent-02",
+      "assignedAgentName": "Marcus Vance",
+      "resolutionTimeMinutes": 62,
+      "csatRating": 5,
+      "sentiment": "Positive",
+      "sentimentScore": 0.9,
+      "createdAt": "2026-10-25T03:12:58.538Z",
+      "updatedAt": "2026-10-30T06:32:58.538Z"
+    },
+    {
+      "id": "TCK-8916",
+      "organizationId": "org-apex-01",
+      "customerId": "usr-cust-01",
+      "customerName": "Elena Rodriguez",
+      "customerEmail": "elena.rodriguez@clientcorp.io",
+      "subject": "Dark mode styling bug in knowledge search dropdown on Firefox",
+      "description": "Minor CSS clipping observed when scrolling document search results on Firefox 128 on macOS.",
+      "category": "Product Issues",
+      "priority": "Low",
+      "status": "Resolved",
+      "assignedAgentId": "usr-agent-01",
+      "assignedAgentName": "Sarah Jenkins",
+      "resolutionTimeMinutes": 38,
+      "csatRating": 5,
+      "sentiment": "Neutral",
+      "sentimentScore": 0.1,
+      "createdAt": "2026-10-24T05:32:58.538Z",
+      "updatedAt": "2026-10-29T12:12:58.538Z"
+    }
+  ],
+  "conversations": [
+    {
+      "id": "cnv-1793528127169",
+      "organizationId": "org-apex-01",
+      "userId": "usr-cust-01",
+      "title": "What is the refund policy within 30 days?",
+      "createdAt": "2026-11-01T10:15:27.169Z",
+      "updatedAt": "2026-11-01T10:15:27.169Z",
+      "messages": [
+        {
+          "id": "msg-1793528127169-u",
+          "conversationId": "cnv-1793528127169",
+          "sender": "user",
+          "content": "What is the refund policy within 30 days?",
+          "createdAt": "2026-11-01T10:15:27.169Z"
+        },
+        {
+          "id": "msg-1793528127169-a",
+          "conversationId": "cnv-1793528127169",
+          "sender": "assistant",
+          "content": "Hello,\n\nThank you for reaching out! Here are the details regarding our refund policy within the first 30 days:\n\n* **100% Full Refund:** You are eligible for a full (100%) refund within 30 days of your initial subscription purchase, no questions asked.\n* **How to Initiate:** To request your refund, please submit a support ticket categorized under **\"Refunds\"**, and our team will be happy to assist you with processing it.\n\nIf you have any further questions or need help opening your ticket, please let us know!",
+          "citations": [
+            {
+              "documentTitle": "Billing, Invoicing & Refund Protocols v4.2",
+              "section": "Section 1.2: 30-Day Money-Back Guarantee & Refund Terms",
+              "page": 2,
+              "snippet": "Customers are eligible for a 100% full refund within 30 days of initial subscription purchase without question. Beyond 30 days, prorated refunds are only granted in the event of documented service downtime exceeding SLA thresholds (99.9% uptime requirement). To initiate a refund, customers must submit a ticket under the \"Refunds\" category.",
+              "relevanceScore": 0.75
+            },
+            {
+              "documentTitle": "Enterprise Cloud Security & Access Policy 2026",
+              "section": "Section 2.1: Authentication Protocols & MFA Enforcement",
+              "page": 3,
+              "snippet": "All Enterprise accounts must enforce Multi-Factor Authentication (MFA) via TOTP, WebAuthn FIDO2 keys, or verified SAML SSO. SMS-based 2FA is deprecated and disallowed for administrative accounts. In case of 5 consecutive failed login attempts, the target user identity is locked for 15 minutes unless unlocked via administrator authorization.",
+              "relevanceScore": 0.75
+            },
+            {
+              "documentTitle": "Billing, Invoicing & Refund Protocols v4.2",
+              "section": "Section 3.4: Payment Failures & Grace Periods",
+              "page": 5,
+              "snippet": "When an automated credit card charge fails, the billing engine attempts retry attempts on Day 1, Day 3, and Day 7. The customer enters a 14-day grace period during which full platform services remain accessible. If payment is not settled by Day 14, account capabilities transition to Read-Only mode.",
+              "relevanceScore": 0.75
+            }
+          ],
+          "suggestedAction": "Open a Priority Support Ticket for specialist follow-up",
+          "createdAt": "2026-11-01T10:15:27.169Z"
+        }
+      ]
+    },
+    {
+      "id": "cnv-01",
+      "organizationId": "org-apex-01",
+      "userId": "usr-cust-01",
+      "title": "SAML SSO Configuration & ACS Details",
+      "createdAt": "2026-11-01T09:12:58.538Z",
+      "updatedAt": "2026-11-01T09:14:38.538Z",
+      "messages": [
+        {
+          "id": "msg-01",
+          "conversationId": "cnv-01",
+          "sender": "user",
+          "content": "What are the required Assertion Consumer Service (ACS) URL and Entity ID to set up Okta SAML?",
+          "createdAt": "2026-11-01T09:12:58.538Z"
+        },
+        {
+          "id": "msg-02",
+          "conversationId": "cnv-01",
+          "sender": "assistant",
+          "content": "According to our official Single Sign-On (SSO) & IdP Integration Runbook:\n\n• **ACS URL**: `https://app.supportiq.io/api/auth/saml/callback`\n• **Entity ID / Audience URI**: `urn:supportiq:saml:sp`\n\nEnsure you provide your X.509 Certificate and IdP Single Sign-On URL in **Settings > Security**. Once saved, all users logging in from your corporate domain will be redirected through your IdP.",
+          "citations": [
+            {
+              "documentTitle": "Single Sign-On (SSO) & IdP Integration Runbook",
+              "section": "Section 1.0: SAML 2.0 Configuration Parameters",
+              "page": 1,
+              "snippet": "To configure SAML 2.0 SSO in your Identity Provider (Okta, Azure AD, OneLogin, Google Workspace), input the Assertion Consumer Service (ACS) URL: https://app.supportiq.io/api/auth/saml/callback and Entity ID: urn:supportiq:saml:sp.",
+              "relevanceScore": 0.98
+            }
+          ],
+          "suggestedAction": "View SAML Runbook in Knowledge Base",
+          "createdAt": "2026-11-01T09:13:18.538Z"
+        }
+      ]
+    },
+    {
+      "id": "cnv-02",
+      "organizationId": "org-apex-01",
+      "userId": "usr-cust-02",
+      "title": "Refund Policy & SLA Questions",
+      "createdAt": "2026-11-01T08:12:58.538Z",
+      "updatedAt": "2026-11-01T08:14:38.538Z",
+      "messages": [
+        {
+          "id": "msg-03",
+          "conversationId": "cnv-02",
+          "sender": "user",
+          "content": "What is our eligibility for a refund if we downgrade our plan after 20 days?",
+          "createdAt": "2026-11-01T08:12:58.538Z"
+        },
+        {
+          "id": "msg-04",
+          "conversationId": "cnv-02",
+          "sender": "assistant",
+          "content": "You are completely covered! Under our verified Billing, Invoicing & Refund Protocols (v4.2), you have a **30-Day Money-Back Guarantee**:\n\n1. Customers are eligible for a 100% full refund within 30 days of initial purchase.\n2. In the case of mid-cycle downgrades within 30 days, prorated credits or refunds can be processed immediately.\n3. Beyond 30 days, refunds require documented service downtime exceeding SLA thresholds (99.9% uptime requirement).",
+          "citations": [
+            {
+              "documentTitle": "Billing, Invoicing & Refund Protocols v4.2",
+              "section": "Section 1.2: 30-Day Money-Back Guarantee & Refund Terms",
+              "page": 2,
+              "snippet": "Customers are eligible for a 100% full refund within 30 days of initial subscription purchase without question. Beyond 30 days, prorated refunds are only granted in the event of documented service downtime exceeding SLA thresholds.",
+              "relevanceScore": 0.97
+            }
+          ],
+          "suggestedAction": "Create Ticket under Refunds category",
+          "createdAt": "2026-11-01T08:13:18.538Z"
+        }
+      ]
+    }
+  ],
+  "evaluations": [
+    {
+      "id": "eval-1793529276341",
+      "organizationId": "org-apex-01",
+      "runDate": "2026-11-01T10:34:36.341Z",
+      "totalTests": 7,
+      "successfulRetrievals": 7,
+      "retrievalSuccessRate": 100,
+      "averageRelevanceScore": 0.75,
+      "groundednessScore": 0.98,
+      "averageLatencyMs": 188,
+      "status": "Completed",
+      "testResults": [
+        {
+          "id": "tr-1",
+          "query": "What is the required ACS URL for Okta SAML configuration?",
+          "expectedDoc": "Single Sign-On (SSO) & IdP Integration Runbook",
+          "retrievedDoc": "Single Sign-On (SSO) & IdP Integration Runbook",
+          "relevanceScore": 0.72,
+          "grounded": true,
+          "latencyMs": 204,
+          "status": "PASS"
+        },
+        {
+          "id": "tr-2",
+          "query": "Can a customer get a full refund within 30 days?",
+          "expectedDoc": "Billing, Invoicing & Refund Protocols v4.2",
+          "retrievedDoc": "Billing, Invoicing & Refund Protocols v4.2",
+          "relevanceScore": 0.75,
+          "grounded": true,
+          "latencyMs": 156,
+          "status": "PASS"
+        },
+        {
+          "id": "tr-3",
+          "query": "What is the Enterprise API quota in requests per minute?",
+          "expectedDoc": "API Rate Limiting, Quotas & Webhook Specifications",
+          "retrievedDoc": "API Rate Limiting, Quotas & Webhook Specifications",
+          "relevanceScore": 0.82,
+          "grounded": true,
+          "latencyMs": 185,
+          "status": "PASS"
+        },
+        {
+          "id": "tr-4",
+          "query": "Is SMS two-factor authentication permitted for admin accounts?",
+          "expectedDoc": "Enterprise Cloud Security & Access Policy 2026",
+          "retrievedDoc": "Enterprise Cloud Security & Access Policy 2026",
+          "relevanceScore": 0.76,
+          "grounded": true,
+          "latencyMs": 182,
+          "status": "PASS"
+        },
+        {
+          "id": "tr-5",
+          "query": "How many days of grace period do customers receive on failed payment?",
+          "expectedDoc": "Billing, Invoicing & Refund Protocols v4.2",
+          "retrievedDoc": "Billing, Invoicing & Refund Protocols v4.2",
+          "relevanceScore": 0.72,
+          "grounded": true,
+          "latencyMs": 170,
+          "status": "PASS"
+        },
+        {
+          "id": "tr-6",
+          "query": "What algorithm signs outgoing webhook payloads?",
+          "expectedDoc": "API Rate Limiting, Quotas & Webhook Specifications",
+          "retrievedDoc": "API Rate Limiting, Quotas & Webhook Specifications",
+          "relevanceScore": 0.72,
+          "grounded": true,
+          "latencyMs": 223,
+          "status": "PASS"
+        },
+        {
+          "id": "tr-7",
+          "query": "What protocol is used for automated user provisioning and deprovisioning?",
+          "expectedDoc": "Single Sign-On (SSO) & IdP Integration Runbook",
+          "retrievedDoc": "Single Sign-On (SSO) & IdP Integration Runbook",
+          "relevanceScore": 0.74,
+          "grounded": true,
+          "latencyMs": 199,
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "eval-run-01",
+      "organizationId": "org-apex-01",
+      "runDate": "2026-10-31T10:12:58.538Z",
+      "totalTests": 8,
+      "successfulRetrievals": 8,
+      "retrievalSuccessRate": 100,
+      "averageRelevanceScore": 0.94,
+      "groundednessScore": 0.96,
+      "averageLatencyMs": 382,
+      "status": "Completed",
+      "testResults": [
+        {
+          "id": "t-1",
+          "query": "What is the ACS callback URL for Okta SAML setup?",
+          "expectedDoc": "Single Sign-On (SSO) & IdP Integration Runbook",
+          "retrievedDoc": "Single Sign-On (SSO) & IdP Integration Runbook",
+          "relevanceScore": 0.98,
+          "grounded": true,
+          "latencyMs": 340,
+          "status": "PASS"
+        },
+        {
+          "id": "t-2",
+          "query": "What is the refund eligibility period for new subscriptions?",
+          "expectedDoc": "Billing, Invoicing & Refund Protocols v4.2",
+          "retrievedDoc": "Billing, Invoicing & Refund Protocols v4.2",
+          "relevanceScore": 0.97,
+          "grounded": true,
+          "latencyMs": 390,
+          "status": "PASS"
+        },
+        {
+          "id": "t-3",
+          "query": "What is the Enterprise rate limit per minute?",
+          "expectedDoc": "API Rate Limiting, Quotas & Webhook Specifications",
+          "retrievedDoc": "API Rate Limiting, Quotas & Webhook Specifications",
+          "relevanceScore": 0.96,
+          "grounded": true,
+          "latencyMs": 365,
+          "status": "PASS"
+        },
+        {
+          "id": "t-4",
+          "query": "Is SMS 2FA permitted for administrative access?",
+          "expectedDoc": "Enterprise Cloud Security & Access Policy 2026",
+          "retrievedDoc": "Enterprise Cloud Security & Access Policy 2026",
+          "relevanceScore": 0.95,
+          "grounded": true,
+          "latencyMs": 410,
+          "status": "PASS"
+        },
+        {
+          "id": "t-5",
+          "query": "What happens when a payment charge fails on day 1?",
+          "expectedDoc": "Billing, Invoicing & Refund Protocols v4.2",
+          "retrievedDoc": "Billing, Invoicing & Refund Protocols v4.2",
+          "relevanceScore": 0.93,
+          "grounded": true,
+          "latencyMs": 375,
+          "status": "PASS"
+        },
+        {
+          "id": "t-6",
+          "query": "How are outgoing webhooks signed and verified?",
+          "expectedDoc": "API Rate Limiting, Quotas & Webhook Specifications",
+          "retrievedDoc": "API Rate Limiting, Quotas & Webhook Specifications",
+          "relevanceScore": 0.94,
+          "grounded": true,
+          "latencyMs": 405,
+          "status": "PASS"
+        },
+        {
+          "id": "t-7",
+          "query": "What is the SCIM user deactivation SLA?",
+          "expectedDoc": "Single Sign-On (SSO) & IdP Integration Runbook",
+          "retrievedDoc": "Single Sign-On (SSO) & IdP Integration Runbook",
+          "relevanceScore": 0.91,
+          "grounded": true,
+          "latencyMs": 388,
+          "status": "PASS"
+        },
+        {
+          "id": "t-8",
+          "query": "What are the three core user roles in the platform?",
+          "expectedDoc": "Enterprise Cloud Security & Access Policy 2026",
+          "retrievedDoc": "Enterprise Cloud Security & Access Policy 2026",
+          "relevanceScore": 0.92,
+          "grounded": true,
+          "latencyMs": 380,
+          "status": "PASS"
+        }
+      ]
+    }
+  ]
+}
