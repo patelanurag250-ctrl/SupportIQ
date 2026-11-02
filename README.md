@@ -38,30 +38,6 @@ SupportIQ is an enterprise-grade AI customer support platform built using the **
 
 ---
 
-## Platform Showcase & Screenshots
-
-### 1. Operations Command Center & Telemetry
-Real-time customer support metrics, active incident load, automated AI deflection analytics, and resolution time trajectories.
-
-![Operations Command Center](docs/screenshots/dashboard.jpg)
-
-### 2. Conversational AI Assistant & Grounded RAG Workspace
-Multi-turn conversational agent powered by Google Gemini 3.8 Flash with verified document citations, chunk relevance scores, and instant context previews.
-
-![Conversational AI Assistant](docs/screenshots/ai-assistant.jpg)
-
-### 3. Incident Management & AI Ticket Intelligence
-Priority triage workflows, real-time sentiment scoring, root cause analysis, and one-click Gemini-drafted response drawer.
-
-![Incident Management & AI Ticket Intelligence](docs/screenshots/ticket-operations.jpg)
-
-### 4. Knowledge Base & Semantic Vector Library
-Drag-and-drop multi-format document ingestion (PDF, Markdown, TXT) with semantic chunk inspectors, token counters, and sync status tracking.
-
-![Knowledge Base & Semantic Vector Library](docs/screenshots/knowledge-base.jpg)
-
----
-
 ## Key Features
 
 1. **Supabase PostgreSQL & Row Level Security (RLS)**:
